@@ -18,8 +18,8 @@ with ZipFile(file_name, 'r') as zip:
 
 st.title('PLANT DISEASE DETECTION')
 st.sidebar.title("PLANT DISEASE DETECTION")
-st.sidebar.caption("Know about your Planta")
-st.sidebar.markdown("Made by RA students")
+st.sidebar.caption("Know about your Plant diseases ")
+st.sidebar.markdown("Made by Sudharsan,B.ca,KGISL")
 st.sidebar.caption("This model is trained with 87k plant diseased leaves ")
 st.sidebar.markdown("'Tomato', 'Grape', 'Orange', 'Soybean', 'Squash', 'Potato', 'Corn_(maize)', 'Strawberry', 'Peach', 'Apple', 'Blueberry', 'Cherry_(including_sour)', 'Pepper,_bell', 'Raspberry'")
 
@@ -38,18 +38,18 @@ st.markdown(page_bg_img, unsafe_allow_html=True)
 model = tf.keras.models.load_model('best_plant_model (3).h5')
 
 class_names = ['Apple___Apple_scab',
- 'Apple___Black_rot',
- 'Apple___Cedar_apple_rust',
- 'Apple___healthy',
- 'Blueberry___healthy',
- 'Cherry_(including_sour)___Powdery_mildew',
- 'Cherry_(including_sour)___healthy',
- 'Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot',
- 'Corn_(maize)___Common_rust_',
- 'Corn_(maize)___Northern_Leaf_Blight',
- 'Corn_(maize)___healthy',
+ 'Apple_Black_rot',
+ 'Apple_Cedar_apple_rust',
+ 'Apple_healthy',
+ 'Blueberry_healthy',
+ 'Cherry_(including_sour)_Powdery_mildew',
+ 'Cherry_(including_sour)_healthy',
+ 'Corn_(maize)_Cercospora_leaf_spot Gray_leaf_spot',
+ 'Corn_(maize)_Common_rust_',
+ 'Corn_(maize)_Northern_Leaf_Blight',
+ 'Corn_(maize)_healthy',
  'Grape___Black_rot',
- 'Grape___Esca_(Black_Measles)',
+ 'Grape_Esca_(Black_Measles)',
  'Grape___Leaf_blight_(Isariopsis_Leaf_Spot)',
  'Grape___healthy',
  'Orange___Haunglongbing_(Citrus_greening)',
@@ -97,7 +97,7 @@ if uploaded_file is not None:
 	image = mpimg.imread(uploaded_file)
 	st.image(image, caption='Sunrise by the mountains')
 	img1 = tf.image.resize(image,(224,224))
-	st.write('#Prediction:')
+	st.write('# Prediction for the given image:')
 	st.write(predict_img(img1,model))
 
 

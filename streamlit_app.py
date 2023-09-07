@@ -19,9 +19,9 @@ with ZipFile(file_name, 'r') as zip:
 st.title('PLANT DISEASE DETECTION')
 st.sidebar.title("PLANT DISEASE DETECTION")
 st.sidebar.caption("Know about your Plant diseases ")
-st.sidebar.markdown("Made by Sudharsan,B.ca,KGISL")
+st.sidebar.markdown("Made by Sudharsan S,MCA,KGISLIIM")
 st.sidebar.caption("This model is trained with 87k plant diseased leaves ")
-st.sidebar.markdown("'Tomato', 'Grape', 'Orange', 'Soybean', 'Squash', 'Potato', 'Corn_(maize)', 'Strawberry', 'Peach', 'Apple', 'Blueberry', 'Cherry_(including_sour)', 'Pepper,_bell', 'Raspberry'")
+st.sidebar.markdown("'Tomato', 'Grape', 'Orange', 'Soyabean', 'Squash', 'Potato', 'Corn_(maize)', 'Strawberry', 'Peach', 'Apple', 'Blueberry', 'Cherry_(including_sour)', 'Pepper,_bell', 'Raspberry'")
 
 
 page_bg_img = '''

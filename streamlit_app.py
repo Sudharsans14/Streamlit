@@ -27,7 +27,7 @@ st.sidebar.markdown("'Tomato', 'Grape', 'Orange', 'Soyabean', 'Squash', 'Potato'
 page_bg_img = '''
 <style>
 body {
-background-image: url(r"F:\plant disease project pic\tomato.jpeg");
+background-image: url(r"image.jpeg");
 background-size: cover;
 }
 </style>
